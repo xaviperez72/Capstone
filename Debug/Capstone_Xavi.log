@@ -1,0 +1,21 @@
+﻿  controller.cpp
+C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\src\snake.h(14,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\src\snake.h(15,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  game.cpp
+C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\src\snake.h(14,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\src\snake.h(15,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\src\game.cpp(82,24): warning C4305: '+=': truncation from 'double' to 'float'
+  main.cpp
+C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\src\snake.h(14,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\src\snake.h(15,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  renderer.cpp
+C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\src\snake.h(14,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\src\snake.h(15,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  snake.cpp
+C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\src\snake.h(14,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\src\snake.h(15,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\src\snake.cpp(42,16): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\src\snake.cpp(43,16): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol _main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\Debug\Capstone_Xavi.exe : fatal error LNK1120: 1 unresolved externals

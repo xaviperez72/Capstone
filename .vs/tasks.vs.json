@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-CppND-Capstone-Snake-Game",
+      "appliesTo": "/",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "task-CppND-Capstone-Snake-Game",
+      "appliesTo": "/",
+      "type": "launch"
+    }
+  ]
+}
