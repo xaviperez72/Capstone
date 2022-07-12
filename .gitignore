@@ -1,4 +1,4 @@
 .github/**
-/.vs/CppND-Capstone-Snake-Game/v16/Browse.VC.opendb
-/.vs/CppND-Capstone-Snake-Game/v16/Browse.VC.db-wal
-/.vs/CppND-Capstone-Snake-Game/v16/Browse.VC.db-shm
+/.vs
+/out
+/Debug
