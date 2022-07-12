@@ -17,5 +17,4 @@ C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\src\snake.h(15,15): warning
 C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\src\snake.cpp(42,16): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\src\snake.cpp(43,16): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   Generating Code...
-MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol _main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
-C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\Debug\Capstone_Xavi.exe : fatal error LNK1120: 1 unresolved externals
+  Capstone_Xavi.vcxproj -> C:\Users\XAVI\Source\Repos\CppND-Capstone-Snake-Game\Debug\Capstone_Xavi.exe
