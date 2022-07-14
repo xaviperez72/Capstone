@@ -1,3 +1,0 @@
-C:/Users/XAVI/source/repos/CppND-Capstone-Snake-Game/out/build/windows-default/CMakeFiles/SnakeGame.dir
-C:/Users/XAVI/source/repos/CppND-Capstone-Snake-Game/out/build/windows-default/CMakeFiles/edit_cache.dir
-C:/Users/XAVI/source/repos/CppND-Capstone-Snake-Game/out/build/windows-default/CMakeFiles/rebuild_cache.dir
