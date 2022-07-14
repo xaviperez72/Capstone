@@ -1,20 +1,14 @@
-﻿  controller.cpp
-C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\src\snake.h(14,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\src\snake.h(15,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-  game.cpp
-C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\src\snake.h(14,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\src\snake.h(15,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\src\game.cpp(82,24): warning C4305: '+=': truncation from 'double' to 'float'
+﻿  ScoreTable.cpp
+C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\ScoreTable.cpp(44,66): error C2143: syntax error: missing ')' before ';'
+C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\ScoreTable.cpp(45,24): warning C4834: discarding return value of function with 'nodiscard' attribute
+C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\ScoreTable.cpp(107,1): error C2511: 'std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>> ScoreTable::Exist_Current_Player(const std::string)': overloaded member function not found in 'ScoreTable'
+          with
+          [
+              _Ty=std::pair<std::string,float>
+          ]
+C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\ScoreTable.h(11): message : see declaration of 'ScoreTable'
   main.cpp
-C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\src\snake.h(14,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\src\snake.h(15,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-  renderer.cpp
-C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\src\snake.h(14,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\src\snake.h(15,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-  snake.cpp
-C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\src\snake.h(14,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\src\snake.h(15,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\src\snake.cpp(42,16): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\src\snake.cpp(43,16): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\src\snake.h(14,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\src\snake.h(15,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\XAVI\source\repos\CppND-Capstone-Snake-Game\src\main.cpp(5,10): fatal error C1083: Cannot open include file: 'ScoreTable.h': No such file or directory
   Generating Code...
-  Capstone_Xavi.vcxproj -> C:\Users\XAVI\Source\Repos\CppND-Capstone-Snake-Game\Debug\Capstone_Xavi.exe
