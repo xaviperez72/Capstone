@@ -55,7 +55,7 @@ Snake::Snake(int grid_width, int grid_height, int speed_option)
     grid_height(grid_height),
     speed_option(speed_option)
 {
-    SDL_Point s;
+    Head s;
     s.x = grid_width / 2;
     s.y = grid_height / 2;
 
@@ -69,13 +69,13 @@ Snake::Snake(int grid_width, int grid_height, int speed_option)
     }
 }
 
-SDL_Point Snake::get_head_with_lock()
+Head Snake::get_head_with_lock()
 {
     std::lock_guard<std::mutex> lock(mtx);
     return head;
 }
 
-void Snake::set_head_with_lock(SDL_Point f)
+void Snake::set_head_with_lock(Head f)
 {
     std::lock_guard<std::mutex> lock(mtx);
     head.x = f.x;
@@ -91,9 +91,15 @@ std::vector<SDL_Point> Snake::get_body_with_lock()
 
 void Snake::Update() {
   std::lock_guard<std::mutex> lock(mtx);
-  SDL_Point prev_cell = head;
+
+  SDL_Point prev_cell{
+      static_cast<int>(head.x),
+      static_cast<int>(head.y) };  // We first capture the head's cell before updating.
   UpdateHead();
-  SDL_Point current_cell = head;
+  SDL_Point current_cell{
+      static_cast<int>(head.x),
+      static_cast<int>(head.y) };  // Capture the head's cell after updating.
+
   // Update all of the body vector items if the snake head has moved to a new
   // cell.
   if (current_cell.x != prev_cell.x || current_cell.y != prev_cell.y) {
@@ -121,8 +127,8 @@ void Snake::UpdateHead() {
   }
 
   // Wrap the Snake around to the beginning if going off of the screen.
-  head.x = (int) fmod(head.x + grid_width, grid_width);
-  head.y = (int) fmod(head.y + grid_height, grid_height);
+  head.x = fmod(head.x + grid_width, grid_width);
+  head.y = fmod(head.y + grid_height, grid_height);
 }
 
 void Snake::UpdateBody(SDL_Point &current_head_cell, SDL_Point &prev_head_cell) {
@@ -150,7 +156,7 @@ void Snake::GrowBody() { growing = true; }
 // Inefficient method to check if cell is occupied by snake.
 bool Snake::SnakeCell(int x, int y) 
 {
-  if (x == head.x && y == head.y) {
+  if (x == static_cast<int>(head.x) && y == static_cast<int>(head.y)) {
     return true;
   }
   for (auto const &item : body) {

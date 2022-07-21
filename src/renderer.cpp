@@ -45,7 +45,7 @@ void Renderer::Render(std::shared_ptr<Snake> snake, std::shared_ptr<Food> food) 
 
   // We get all at once!!
   SDL_Point f = food->get_food_with_lock();
-  SDL_Point s = snake->get_head_with_lock();
+  Head s = snake->get_head_with_lock();
   std::vector<SDL_Point> b = snake->get_body_with_lock();
 
   // Clear screen
@@ -67,8 +67,8 @@ void Renderer::Render(std::shared_ptr<Snake> snake, std::shared_ptr<Food> food) 
   }
 
   // Render snake's head
-  block.x = s.x * block.w;
-  block.y = s.y * block.h;
+  block.x = static_cast<int>(s.x) * block.w;
+  block.y = static_cast<int>(s.y) * block.h;
   if (snake->alive) {
     SDL_SetRenderDrawColor(sdl_renderer, 0x00, 0x7A, 0xCC, 0xFF);
   } else {

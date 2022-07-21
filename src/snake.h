@@ -18,6 +18,11 @@ private:
     std::mutex mtx;
 };
 
+typedef struct {
+    float x;
+    float y;
+} Head;
+
 class Snake {
  public:
   enum class Direction { kUp, kDown, kLeft, kRight };
@@ -27,9 +32,9 @@ class Snake {
   void Update();
   void GrowBody();
   bool SnakeCell(int x, int y);
-  SDL_Point get_head_with_lock();
+  Head get_head_with_lock();
   std::vector<SDL_Point> get_body_with_lock();
-  void set_head_with_lock(SDL_Point f);  
+  void set_head_with_lock(Head f);  
 
   Direction direction = Direction::kUp;
 
@@ -37,7 +42,7 @@ class Snake {
   float speed{0.1f};
   int size{1};
   bool alive{true};
-  SDL_Point head;
+  Head head; 
   //float head_x;
   //float head_y;
   std::vector<SDL_Point> body;
