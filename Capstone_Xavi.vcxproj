@@ -104,20 +104,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ScoreTable.cpp" />
     <ClCompile Include="src\controller.cpp" />
     <ClCompile Include="src\game.cpp" />
+    <ClCompile Include="src\InputData.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\renderer.cpp" />
+    <ClCompile Include="src\ScoreTable.cpp" />
     <ClCompile Include="src\snake.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ScoreTable.h" />
     <ClInclude Include="out\build\windows-default\cmakefiles\showincludes\foo.h" />
     <ClInclude Include="out\build\x64-debug\cmakefiles\showincludes\foo.h" />
     <ClInclude Include="src\controller.h" />
     <ClInclude Include="src\game.h" />
+    <ClInclude Include="src\InputData.h" />
     <ClInclude Include="src\renderer.h" />
+    <ClInclude Include="src\ScoreTable.h" />
     <ClInclude Include="src\snake.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

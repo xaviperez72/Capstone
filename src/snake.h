@@ -2,33 +2,48 @@
 #define SNAKE_H
 
 #include <vector>
+#include <memory>
+#include <mutex>
 #include "SDL.h"
+
+std::string time_in_HH_MM_SS_MMM();
+
+class Food {
+public:
+    Food() { food.x = 0; food.y = 0; };
+    SDL_Point get_food_with_lock();
+    void set_food_with_lock(SDL_Point f);
+private:
+    SDL_Point food;
+    std::mutex mtx;
+};
 
 class Snake {
  public:
   enum class Direction { kUp, kDown, kLeft, kRight };
 
-  Snake(int grid_width, int grid_height)
-      : grid_width(grid_width),
-        grid_height(grid_height),
-        head_x(grid_width / 2.0),
-        head_y(grid_height / 2.0) {}
-
+  Snake(int grid_width, int grid_height, int speed_option);
+  int Get_Speed_Option() { return speed_option; };
   void Update();
-
   void GrowBody();
   bool SnakeCell(int x, int y);
+  SDL_Point get_head_with_lock();
+  std::vector<SDL_Point> get_body_with_lock();
+  void set_head_with_lock(SDL_Point f);  
 
   Direction direction = Direction::kUp;
 
+  int speed_option;
   float speed{0.1f};
   int size{1};
   bool alive{true};
-  float head_x;
-  float head_y;
+  SDL_Point head;
+  //float head_x;
+  //float head_y;
   std::vector<SDL_Point> body;
 
  private:
+  std::mutex mtx;
   void UpdateHead();
   void UpdateBody(SDL_Point &current_cell, SDL_Point &prev_cell);
 

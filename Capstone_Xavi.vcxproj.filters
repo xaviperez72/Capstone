@@ -30,7 +30,10 @@
     <ClCompile Include="src\snake.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ScoreTable.cpp">
+    <ClCompile Include="src\ScoreTable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\InputData.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -53,7 +56,10 @@
     <ClInclude Include="src\snake.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ScoreTable.h">
+    <ClInclude Include="src\ScoreTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\InputData.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
